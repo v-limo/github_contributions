@@ -15,7 +15,7 @@ This project was motivated by [this]("https://www.linkedin.com/posts/javascript-
 
 ### Screenshot of the app
 
-![single user Page](media/sample2.png)
+![single user Page](media/final_copy.png)
 
 NOTE : Does not work for private repositories
 

@@ -57,7 +57,7 @@ export const commitSlice = createSlice({
   },
 })
 
-const fetchCommits = createAsyncThunk(
+export const fetchCommits = createAsyncThunk(
   "commits/fetchCommits",
   async (username: string) => {
     const response = await axios.get(
