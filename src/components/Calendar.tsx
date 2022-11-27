@@ -1,5 +1,5 @@
 import React from "react"
-import { CommitComponent } from "./Commitcomponent"
+import { CommitComponent } from "./CommitComponent"
 import WeekDays from "./WeekDays"
 import { YearComponent } from "./YearComponent"
 
