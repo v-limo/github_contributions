@@ -2,7 +2,7 @@
 
 ## 1. What is this?
 
-This project was motivated by [this]("https://www.linkedin.com/posts/javascript-developer_activity-7001843025769308161-qvvS?utm_source=share&utm_medium=member_desktop") LinkedIn post by [JavaScript Developer ] ("https://www.linkedin.com/company/javascript-developer")
+This project was motivated by [this]("https://www.linkedin.com/posts/javascript-developer_activity-7001843025769308161-qvvS?utm_source=share&utm_medium=member_desktop") LinkedIn post by [JavaScript Developer]("https://www.linkedin.com/company/javascript-developer")
 
 - The app uses [React]("https://reactjs.org/") and Tailwind CSS to display the list of contributions made by the user on GitHub and the number of contributions made on each day of the week.
 - Its a clone of the [GitHub Contributions Calendar]("https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/managing-contribution-settings-on-your-profile/why-are-my-contributions-not-showing-up-on-my-profile")
@@ -21,10 +21,14 @@ This project was motivated by [this]("https://www.linkedin.com/posts/javascript-
 
 NOTE : Does not work for private repositories
 
+## 3. To come
 
+- [ ] Make the contributions dynamic to the user's GitHub profile
+- [ ] Including years in the calendar and making it dynamic
+- [ ] improve the UI - add a toggle button to switch between light and dark mode
+- [ ] Add a feature to show the number of contributions made on each day of the week
 
-
-## 3. Available Scripts
+## 4. Available Scripts
 
 In the project directory, you can run:
 
@@ -48,7 +52,7 @@ In the project directory, you can run:
 
 - See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## 3. Learn More
+## 5. Learn More
 
 1. You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
@@ -60,7 +64,7 @@ In the project directory, you can run:
 
 5. Github Contributions Calendar [here]("https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/managing-contribution-settings-on-your-profile/why-are-my-contributions-not-showing-up-on-my-profile")
 
-## 5. Contributing
+## 6. Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
