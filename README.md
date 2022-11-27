@@ -9,6 +9,8 @@ This project was motivated by [this]("https://www.linkedin.com/posts/javascript-
 
 ## 2. Demos
 
+### [Demo of the app](https://github-contributions-omega.vercel.app/)
+
 ### Screenshot of inspiration post
 
 ![single user Page](media/sample.png)
@@ -18,6 +20,9 @@ This project was motivated by [this]("https://www.linkedin.com/posts/javascript-
 ![single user Page](media/final_copy.png)
 
 NOTE : Does not work for private repositories
+
+
+
 
 ## 3. Available Scripts
 
