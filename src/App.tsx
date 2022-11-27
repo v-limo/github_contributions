@@ -1,14 +1,13 @@
+import ContributionCalendar from "./components/ContributionCalendar"
+import Footer from "./components/Footer"
+import Profile from "./components/Profile"
+
 function App() {
   return (
-    <div className="">
-      <h1
-        className="flex  h-screen items-center justify-center bg-gray-100 text-2xl font-bold
-      text-gray-900
-     
-      "
-      >
-        Github Contributions calendar clone with React and Tailwind CSS
-      </h1>
+    <div className=" m-5 flex h-screen flex-col items-center justify-between rounded-lg  border-2 border-solid border-gray-200">
+      <Profile />
+      <ContributionCalendar />
+      <Footer />
     </div>
   )
 }
