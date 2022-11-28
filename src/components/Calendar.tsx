@@ -1,4 +1,3 @@
-import React from "react"
 import { CommitComponent } from "./CommitComponent"
 import WeekDays from "./WeekDays"
 import { YearComponent } from "./YearComponent"
@@ -11,7 +10,8 @@ type Props = {
   weeks: number
   days: Date[]
   random: number
-  handleClick: () => void
+  year: number
+  handleClick: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void
 }
 
 const Calendar = ({
@@ -22,10 +22,12 @@ const Calendar = ({
   weeks,
   days,
   random,
+  year,
   handleClick,
 }: Props) => {
   return (
     <div className="flex  w-auto items-center justify-around rounded-md border border-solid p-2 shadow-sm ">
+      <h1>{days.length}</h1>
       <WeekDays />
 
       {/* Commits */}
@@ -43,7 +45,7 @@ const Calendar = ({
       />
 
       {/* year */}
-      <YearComponent handleClick={handleClick} />
+      <YearComponent handleClick={handleClick} year={year} />
     </div>
   )
 }

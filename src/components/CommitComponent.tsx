@@ -1,4 +1,3 @@
-
 type Props = {
   name: string
   contributions: number
@@ -7,7 +6,7 @@ type Props = {
   weeks: number
   days: Date[]
   random: number
-  handleClick: () => void
+  handleClick: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void
 }
 export const CommitComponent = ({
   ReturnMonths,

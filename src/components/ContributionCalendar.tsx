@@ -8,9 +8,8 @@ type Props = {
 }
 
 function ContributionCalendar({ name, contributions }: Props) {
-
   const [days, setDays] = React.useState<Date[]>([])
-  const [year, setYear] = React.useState<number>(2020)
+  const [year, setYear] = React.useState<number>(2022)
   const [weeks, setWeeks] = React.useState<number>(0)
 
   const [random, setRandom] = React.useState<number>(
@@ -32,8 +31,12 @@ function ContributionCalendar({ name, contributions }: Props) {
     "Dec",
   ]
 
-  const handleClick = () => {
-    setRandom(Math.ceil(Math.random() * 8) * 36)
+  const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    let newYear = parseInt(e.currentTarget.value)
+
+    if (newYear !== year) {
+      setYear(newYear)
+    }
   }
 
   const returnRandom = () => {
@@ -48,6 +51,11 @@ function ContributionCalendar({ name, contributions }: Props) {
     uniqueMonths = uniqueMonths.filter((v, i, a) => a.indexOf(v) === i)
     return uniqueMonths
   }
+
+  // randomize the color of the calendar on year change
+  useEffect(() => {
+    setRandom(Math.ceil(Math.random() * 8) * 36)
+  }, [year])
 
   useEffect(() => {
     const updateDays = () => {
@@ -86,6 +94,7 @@ function ContributionCalendar({ name, contributions }: Props) {
           ReturnMonths,
           weeks,
           days,
+          year,
           random,
           handleClick,
         }}
