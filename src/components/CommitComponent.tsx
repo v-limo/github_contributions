@@ -21,7 +21,11 @@ export const CommitComponent = ({
       <div>
         <div className="align-center mb-2 flex justify-evenly ">
           {ReturnMonths().map((month) => {
-            return <p className="text-xs">{month}</p>
+            return (
+              <p key={month} className="text-xs">
+                {month}
+              </p>
+            )
           })}
         </div>
 

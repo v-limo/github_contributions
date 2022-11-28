@@ -1,6 +1,8 @@
-import React, { useEffect } from "react"
-import Calendar from "./Calendar"
-import CalendarHeader from "./CalendarHeader"
+import React, { useEffect } from 'react';
+
+import { useAppSelector } from '../app/hooks';
+import Calendar from './Calendar';
+import CalendarHeader from './CalendarHeader';
 
 type Props = {
   name: string
@@ -11,6 +13,12 @@ function ContributionCalendar({ name, contributions }: Props) {
   const [days, setDays] = React.useState<Date[]>([])
   const [year, setYear] = React.useState<number>(2022)
   const [weeks, setWeeks] = React.useState<number>(0)
+
+  const { allCommits } = useAppSelector((state) => state.commits)
+
+  const dates = allCommits.map((commit) => commit.commit.author.date)
+
+  console.log(dates.length)
 
   const [random, setRandom] = React.useState<number>(
     Math.ceil(Math.random() * 8) * 36

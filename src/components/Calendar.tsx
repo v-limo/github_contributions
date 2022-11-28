@@ -1,6 +1,6 @@
-import { CommitComponent } from "./CommitComponent"
-import WeekDays from "./WeekDays"
-import { YearComponent } from "./YearComponent"
+import { CommitComponent } from './CommitComponent';
+import WeekDays from './WeekDays';
+import { YearComponent } from './YearComponent';
 
 type Props = {
   name: string

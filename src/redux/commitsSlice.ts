@@ -1,8 +1,9 @@
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit"
-import { RootState } from "../app/store"
-import { Commit, Repo } from "../types"
+import axios from 'axios';
 
-import axios from "axios"
+import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
+
+import { RootState } from '../app/store';
+import { Commit, Repo } from '../types';
 
 export interface CommitsState {
   allCommits: Commit[]

@@ -1,5 +1,6 @@
-import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit"
-import commitsReducer from "../redux/commitsSlice"
+import { Action, configureStore, ThunkAction } from '@reduxjs/toolkit';
+
+import commitsReducer from '../redux/commitsSlice';
 
 export const store = configureStore({
   reducer: {

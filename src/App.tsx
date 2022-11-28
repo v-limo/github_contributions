@@ -1,17 +1,16 @@
-import ContributionCalendar from "./components/ContributionCalendar"
-import Profile from "./components/Profile"
-import { useEffect } from "react"
-import { useAppDispatch, useAppSelector } from "./app/hooks"
+import { useEffect } from 'react';
+
+import { useAppDispatch } from './app/hooks';
+import ContributionCalendar from './components/ContributionCalendar';
+import Profile from './components/Profile';
+import { fetchCommits } from './redux/commitsSlice';
 
 function App() {
   const dispatch = useAppDispatch()
-  const { allCommits } = useAppSelector((state) => state.commits)
 
   useEffect(() => {
-    // dispatch(fetchCommits("v-limo"))
+    dispatch(fetchCommits("v-limo"))
   }, [dispatch])
-
-  console.log(allCommits.length)
 
   return (
     <div
