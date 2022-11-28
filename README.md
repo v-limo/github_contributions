@@ -2,20 +2,20 @@
 
 ## 1. What is this?
 
-This project was motivated by [this]("https://www.linkedin.com/posts/javascript-developer_activity-7001843025769308161-qvvS?utm_source=share&utm_medium=member_desktop") LinkedIn post by [JavaScript Developer]("https://www.linkedin.com/company/javascript-developer")
+This project was motivated by [this](https://www.linkedin.com/posts/javascript-developer_activity-7001843025769308161-qvvS?utm_source=share&utm_medium=member_desktop) LinkedIn post by [JavaScript Developer](https://www.linkedin.com/company/javascript-developer)
 
-- The app uses [React]("https://reactjs.org/") and Tailwind CSS to display the list of contributions made by the user on GitHub and the number of contributions made on each day of the week.
-- Its a clone of the [GitHub Contributions Calendar]("https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/managing-contribution-settings-on-your-profile/why-are-my-contributions-not-showing-up-on-my-profile")
+- The app uses [React](https://reactjs.org/) and [Tailwind CSS](https://tailwindcss.com/) to display the list of contributions made by the user on GitHub and the number of contributions made on each day of the week.
+- Its a partial clone of the [GitHub Contributions Calendar]("https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/managing-contribution-settings-on-your-profile/why-are-my-contributions-not-showing-up-on-my-profile")
 
 ## 2. Demos
 
-### [Demo of the app](https://github-contributions-omega.vercel.app/)
+### 2.1 [Demo of the app](https://github-contributions-omega.vercel.app/)
 
-### Screenshot of inspiration post
+### 2.2 Screenshot of [inspiration post]("https://www.linkedin.com/posts/javascript-developer_activity-7001843025769308161-qvvS?utm_source=share&utm_medium=member_desktop")
 
 ![single user Page](media/sample.png)
 
-### Screenshot of the app
+### 2.3 Screenshot of the app
 
 ![single user Page](media/final_copy.png)
 
@@ -27,6 +27,7 @@ NOTE : Does not work for private repositories
 - [ ] Including years in the calendar and making it dynamic
 - [ ] improve the UI - add a toggle button to switch between light and dark mode
 - [ ] Add a feature to show the number of contributions made on each day of the week
+- [ ] Move all the state to redux
 
 ## 4. Available Scripts
 
