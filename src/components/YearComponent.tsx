@@ -7,13 +7,12 @@ export const YearComponent = ({ handleClick, year }: Props) => {
   return (
     <div
       className="flex h-full  flex-col
-          items-center justify-between
-        "
+          items-center justify-between"
     >
-      {new Array(3).fill(0).map((_, i) => {
+      {new Array(3).fill(Math.random() * 1000).map((item, i) => {
         return (
           <button
-            key={i}
+            key={i + item}
             value={new Date().getFullYear() + i}
             onClick={(e) => handleClick(e)}
             className={`

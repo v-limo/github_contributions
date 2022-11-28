@@ -1,14 +1,13 @@
 import React from "react"
 
 const WeekDays = () => {
+  const days = ["Mon", "Wed", "Fri"]
   return (
-    <div>
       <div className=" flex flex-col items-center justify-between">
-        <p className="  p-3  text-sm">Mon</p>
-        <p className="  p-3  text-sm">Wen</p>
-        <p className="  p-3  text-sm">Fri</p>
+        {days.map((day) => {
+          return <p className="p-3 text-xs">{day}</p>
+        })}
       </div>
-    </div>
   )
 }
 
