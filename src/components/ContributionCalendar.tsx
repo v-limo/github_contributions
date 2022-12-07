@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react"
 
-import { useAppSelector } from '../app/hooks';
-import Calendar from './Calendar';
-import CalendarHeader from './CalendarHeader';
+import { useAppSelector } from "../app/hooks"
+import Calendar from "./Calendar"
+import CalendarHeader from "./CalendarHeader"
 
 type Props = {
   name: string
@@ -92,7 +92,7 @@ function ContributionCalendar({ name, contributions }: Props) {
   }, [year])
 
   return (
-    <div className="m-2 flex w-full flex-col p-5">
+    <div className="m-2 flex  flex-col p-5 justify-center align-center">
       <CalendarHeader name={name} contributions={contributions} />
       <Calendar
         {...{

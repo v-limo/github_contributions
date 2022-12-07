@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react"
 
 function Profile() {
   return (
@@ -6,11 +6,7 @@ function Profile() {
       className=" flex h-20 w-full items-center
     justify-between"
     >
-      <div
-        className=" flex
-     items-center pt-10
-      "
-      >
+      <div className=" ml-10 flex items-center pt-10">
         <img
           className="m-2 h-auto w-20"
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/220px-Unofficial_JavaScript_logo_2.svg.png"

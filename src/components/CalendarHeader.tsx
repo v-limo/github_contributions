@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react"
 
 type Props = {
   name: string
@@ -8,7 +8,7 @@ type Props = {
 const ContributionCalendar = ({ name, contributions }: Props) => {
   return (
     <div>
-      <h1 className="m-2 text-3xl font-bold text-gray-800 ">{name}</h1>
+      <h1 className="m-auto  text-3xl font-bold text-gray-800 ">{name}</h1>
       <div className="flex items-center justify-between ">
         <p className="mb-2 text-sm  text-gray-800">
           {contributions.toLocaleString()} contributions in the last year
