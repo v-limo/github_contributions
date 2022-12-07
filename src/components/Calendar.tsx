@@ -26,8 +26,7 @@ const Calendar = ({
   handleClick,
 }: Props) => {
   return (
-    <div className="flex  w-auto items-center justify-around rounded-md border border-solid p-2 shadow-sm ">
-      <h1>{days.length}</h1>
+    <div className="flex  m- auto w-auto items-center justify-around rounded-md border border-solid p-2">
       <WeekDays />
 
       {/* Commits */}
