@@ -15,8 +15,7 @@ export const YearComponent = ({ handleClick, year }: Props) => {
             key={i + item}
             value={new Date().getFullYear() + i}
             onClick={(e) => handleClick(e)}
-            className={`no-underline
-            cursor-pointer  p-3  text-sm text-gray-500 hover:text-gray-700
+            className={`cursor-pointer  p-3  text-sm text-gray-500 hover:text-gray-700
             ${
               year === new Date().getFullYear() + i
                 ? "text-gray-900 underline "
