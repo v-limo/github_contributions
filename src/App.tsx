@@ -13,7 +13,7 @@ function App() {
   }, [dispatch])
 
   return (
-    <div className="mx-auto my-3 flex min-h-screen max-w-[1300px] flex-col items-center justify-center rounded-lg border-2">
+    <div className="mx-auto my-4 flex max-h-screen max-w-[1300px] flex-col items-center justify-center rounded-lg border-2">
       <Profile />
       <ContributionCalendar name="You" contributions={212} />
       <ContributionCalendar
